@@ -11,4 +11,5 @@ public class IndexController {
         model.addAttribute("titulo", "Hola Spring boot");
         return "index";
     }
+    
 }
