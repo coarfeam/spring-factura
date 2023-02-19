@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/factura")
 public class FacturaController {
-    @GetMapping("/")
+    @GetMapping({"/",""})
     public String factura(Model model){
         model.addAttribute("factura","factura del cliente");
         return "factura/ver";
